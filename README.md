@@ -16,13 +16,8 @@
 
 Electronic health records allow laboratory-allocation policies to be evaluated retrospectively: recorded test results are hidden, then revealed only for encounters selected by each policy. But comparisons at a nominal false-negative-rate target can reflect differences in **realised operating points**, **threshold selection**, and **the outcomes recorded under existing care**.
 
-This repository contains the statistical methods, simulation code, evaluation tools and aggregate results accompanying the manuscript:
-
-> **Comparing capacity-constrained test-allocation policies with retrospective data: operating-point displacement, threshold-selection instability and decision-dependent labels**  
-> Jili Xu
-
 <div align="center">
-  <img src="assets/Figure_1.png" alt="Empirical operating-characteristic frontiers and a decomposition of the procedure contrast" width="820" />
+  <img src="Figure_1.png" alt="Empirical operating-characteristic frontiers and a decomposition of the procedure contrast" width="820" />
   <br />
   <sub>Operating-point decomposition for two emergency-department comparisons. See the manuscript for definitions and interpretation.</sub>
 </div>
@@ -59,15 +54,14 @@ sharedcapacity/
 ├── src/sharedcap_afa/             # Statistical evaluation and allocation engine
 ├── simulation/                   # Synthetic DGP and fixed-predictor experiments
 ├── scripts/
-│   ├── patient_level/            # Frontier, threshold and label-sensitivity analyses
+│   ├── patient_level/            # Frontier, threshold, and label-sensitivity analyses
 │   ├── tests/                    # Synthetic unit checks
 │   ├── audits/                   # Additional simulation diagnostics
 │   ├── sharedcap/                # Aggregate-level calculations and figure scripts
 │   └── reproduce_aggregates.py  # Rebuild aggregate tables and illustrative plots
 ├── results/
 │   ├── 06_simulation/            # Simulation summaries and run manifest
-│   └── 11_patient_level/        # Released aggregate estimates (not patient records)
-├── assets/                       # Figures displayed in the README
+│   └── 11_patient_level/        # Released aggregate estimates
 ├── pyproject.toml
 └── README.md
 ```
