@@ -1,0 +1,17 @@
+{
+  "_comment": "Copy to export_mapping.json and replace every <...>. Keys are array names in .npz files or column names in .csv/.parquet. 'cal' = threshold-calibration set (MIMIC: 11,264-encounter decision-calibration subset; MC-MED: its validation set); 'test' = complete-pool test set; 'audit' = MIMIC 11,280-encounter audit subset (death30 only). Remove comparisons you do not export.",
+  "pool_size": 16,
+  "K": 5,
+  "comparisons": {
+    "mimic_death30_chem7": {
+      "cal":   {"file": "<path/to/cal_artifact.npz>",   "y": "<label>", "p0": "<no-panel score>", "p1": "<chem7 score>", "pool": "<pool id>", "A_M": "<margin allocation>", "A_R": "<random allocations (10 x n)>", "drop_incomplete_pools": true},
+      "test":  {"file": "<path/to/test_artifact.npz>",  "y": "<label>", "p0": "<no-panel score>", "p1": "<chem7 score>", "pool": "<pool id>", "A_M": "<margin allocation>", "A_R": "<random allocations (10 x n)>", "drop_incomplete_pools": true},
+      "audit": {"file": "<path/to/audit_artifact.npz>", "y": "<label>", "p0": "<no-panel score>", "p1": "<chem7 score>", "pool": "<pool id>", "A_M": "<margin allocation>", "A_R": "<random allocations (10 x n)>", "drop_incomplete_pools": true}
+    },
+    "mimic_death30_cbc":    {"cal": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "test": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "audit": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}},
+    "mimic_critical_cbc":   {"cal": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "test": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}},
+    "mimic_critical_chem7": {"cal": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "test": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}},
+    "mcmed_critical_cbc":   {"cal": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "test": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}},
+    "mcmed_critical_chem7": {"cal": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}, "test": {"file": "<...>", "y": "<...>", "p0": "<...>", "p1": "<...>", "pool": "<...>", "A_M": "<...>", "A_R": "<...>"}}
+  }
+}
