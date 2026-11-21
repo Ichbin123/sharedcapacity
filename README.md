@@ -124,19 +124,13 @@ python scripts/patient_level/run_patient_level.py \
   --out /secure/path/to/derived-results
 ```
 
-The patient-level tools require appropriately prepared, credentialed EHR exports. An export template is available at `scripts/patient_level/export_mapping_TEMPLATE.json`. See [Reproducibility notes](docs/REPRODUCIBILITY.md) for the workflow and output definitions.
+The patient-level tools require appropriately prepared, credentialed EHR exports. An export template is available at `scripts/patient_level/export_mapping_TEMPLATE.json`. 
 
 ## Data and access
 
 The empirical application uses **MIMIC-IV**, **MIMIC-IV-ED** and **MC-MED**. Source patient-level records are distributed by [PhysioNet](https://physionet.org/) under their applicable access conditions. No patient-level records are included in this repository.
 
 The published `results/` directory contains synthetic replicate metrics, operating-characteristic summaries, policy contrasts and other aggregate estimates. Clinical source data and credentialed exports remain outside the repository.
-
-## Citation
-
-If you use this work, please cite the accompanying manuscript (bibliographic details will be added when available):
-
-> Xu J. *Comparing capacity-constrained test-allocation policies with retrospective data: operating-point displacement, threshold-selection instability and decision-dependent labels.*
 
 ---
 
