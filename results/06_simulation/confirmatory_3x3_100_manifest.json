@@ -1,0 +1,52 @@
+{
+  "version": "synthetic-fixed-predictor-assignment-contributions-v2",
+  "alphas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "gammas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "source_sha256": {
+    "simulation/fixed_predictor.py": "a79737bf947cfc023be3047dada4c8659a0e2dbad683ce533647af936219006e",
+    "simulation/mechanism_grid.py": "4ce86f1a372408a85476c93098d23a8bbf71a5b7af29b7b3b7e27fc4c40b04e1",
+    "simulation/world.py": "2971d60d59702dbce82705c198c821af2c75ed14ef4e30817d7d7ea9a08ee6d3",
+    "simulation/assignment_contributions.py": "054cd18ffcb39f0b7ae8ffdd5e8bc7412645209fe63a3db1144c0b1dd5ac6eab",
+    "src/sharedcap_afa/revision/engine.py": "60732368512796050409eba96d18cca2ba5974194d741bb7e78884ce89a75dba"
+  },
+  "environment_versions": {
+    "python": "3.14.9",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "replicates": 100,
+  "n_train": 2500,
+  "n_cal": 1200,
+  "n_test": 2400,
+  "intercept_n": 25000,
+  "pool": 16,
+  "slots": 5,
+  "fnr_target": 0.06,
+  "random_repeats": 3,
+  "seed": 20261118,
+  "predictor_fit_gamma": 0.0,
+  "fit_label": "D0",
+  "selection_calibration_label": "D0",
+  "frozen_across_gamma": [
+    "p0",
+    "p1",
+    "margin_center",
+    "thresholds",
+    "pool_membership",
+    "margin_and_random_selections",
+    "binary_predictions"
+  ],
+  "labels": "retro=D1(gamma), deployment=where(selected,D1(gamma),D0)",
+  "analysis_status": "SYNTHETIC EXPLORATORY; not clinical causal identification",
+  "safety_gate_status": "NO CLAIM OF FNR SAFETY CERTIFICATE"
+}

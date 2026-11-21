@@ -1,0 +1,26 @@
+{
+ "mode": "patient-level",
+ "B": 2000,
+ "seed": 20261119,
+ "target": 0.06,
+ "draws": 10,
+ "m": 16,
+ "K": 5,
+ "workers": 4,
+ "fmax": 0.25,
+ "fnr_range": [
+  0.02,
+  0.05
+ ],
+ "runtime_s": 96.7,
+ "python": "3.14.9",
+ "numpy": "2.5.4",
+ "inputs": {
+  "mimic_critical_cbc.csv": "029f00d476892cc34dc115dac22620bea9c8974b3d5cba143b856a73ab607b8a",
+  "mimic_critical_chem7.csv": "3cb2b91d6051e5aa66b02d58735f57b7f754d223bba1c937085cfbcf6bf7426b",
+  "mcmed_critical_cbc.csv": "f9e803bd6b4b86e86fcc4b8c689620feebd8e579fa25821fd0d1d39aedcaff3c",
+  "mcmed_critical_chem7.csv": "158aee7d5ed8a38b058e960dae2f13f1f174e5e3f4d57747aae80ddeb926e6f2",
+  "mimic_death30_cbc.csv": "b620f9543f4cc9719234939abddeabc98eb47f45d1d6254ab28a6ded7aef86cd",
+  "mimic_death30_chem7.csv": "28b1cf7a693231d34b4995a5a288b483141749732b2edb1b5b35352cff078a45"
+ }
+}
