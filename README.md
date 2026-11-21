@@ -66,8 +66,6 @@ sharedcapacity/
 └── README.md
 ```
 
-Additional aggregate input tables in `results/01_primary/`–`results/06_simulation/` support the rebuilding script. The project uses a pool size of 16, with 5 test allocations per pool in its principal experiments.
-
 ## Quick start
 
 **Requirements:** Python 3.10 or later.
